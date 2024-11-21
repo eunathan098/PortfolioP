@@ -1,11 +1,10 @@
 /* Estilo Responsivo (MOBILE) */
 
 @media screen and (min-width: 320px) and (max-width: 480px){
-
-    .icone-menu-lateral{
+    .menu-mobile{
         display: flex;
     }
-
+  
     nav ul li{
       display: none;
     }
@@ -32,6 +31,15 @@
     }
     .container-projetos{
         flex-wrap: wrap;
+    }
+
+    
+    .bio{
+        width: 90%;
+    }
+    
+    .txt{
+        color: rgba(0, 0, 0, 0.557);
     }
     
 }

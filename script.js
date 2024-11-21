@@ -1,4 +1,11 @@
-document.getElementById("icone-menu").addEventListener("click", function() {
-    var menu = document.getElementById('menu-list')
-    menu.classList.toggle("open");
-});
+function abrirMenuMobile(){
+    let containerMenu = document.getElementById('menu-lateral-mobile');
+
+    containerMenu.style.display = "flex"
+}
+
+function fecharMenuMobile(){
+    let containerMenu =  document.getElementById('menu-lateral-mobile');
+
+    containerMenu.style.display = "none"
+}

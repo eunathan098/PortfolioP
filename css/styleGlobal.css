@@ -24,14 +24,17 @@ nav{
     display: flex;
 }
 
-.icone-menu-lateral{
-    display: none;
-}
 h1{
     font-size: 30px;
     color: rgba(2, 61, 2, 0.555);
 
 }
+
+.menu-mobile{
+    display: none;
+}
+
+
 
 .container-titulos{
     display: flex;
@@ -95,9 +98,22 @@ h4{
     font-size: 40px;
 }
 
+p{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.511);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color:rgba(99, 99, 250, 0.366);
+}
 .sessao_content{
     display: flex;
-    padding: 20px;
+    padding-top: 10px;
     text-align: center;
     align-items: center;
     justify-content: space-around;
@@ -223,6 +239,11 @@ button:hover{
 .icones-contato{
     margin: 20px;
     height: 70px;
+    transition: all 0.3s ease-in-out;
+}
+
+.icones-contato:hover{
+    transform: scale(1.2);
 }
 
 footer{
@@ -244,16 +265,16 @@ footer p{
 
 /* Estilo para o menu lateral no mobile */
 .menu-lateral-mobile {
+    display: none;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 250px;  /* Largura do menu */
-    height: 100vh;
-    background-color: #fff;
-    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
-    transform: translateX(-100%); /* Começa fora da tela */
-    transition: transform 0.3s ease; /* Transição suave */
-    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: white;
 }
 
 /* Exibe o menu quando o "menu" for aberto */
@@ -267,18 +288,46 @@ footer p{
     cursor: pointer;
 }
 
+.align{
+    padding: 20px;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    text-align: right;
+    justify-content: right;
+}
+
+.align .menu-mobile-lateral{
+    display: flex;
+    left: 20px;
+    top: 0;
+}
+
+.container-menu-lateral-list{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 90%;
+}
+
 /* Estilos dos itens do menu */
 .container-menu-lateral-list ul li {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     list-style: none;
     margin-top: 20px;
     font-size: 22px;
     font-weight: bold;
     color: rgba(0, 0, 255, 0.504);
     cursor: pointer;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease-in-out;
+    font-size: 30px;
 }
 
 .container-menu-lateral-list ul li:hover {
-    color: rgba(0, 0, 255, 0.8);  /* Altere a cor ao passar o mouse */
+    color: red;
+    transform: scale(1.2);
 }
 
