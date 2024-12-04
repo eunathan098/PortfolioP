@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="css/styleGlobal.css">
     <link rel="stylesheet" href="css/styleMobile.css">
     <link rel="shortcut icon" href="imagens/perfil.jpg" type="image/x-icon">
@@ -10,18 +11,22 @@
     <title> Nathan | Dev </title>
 </head>
 <body>
-    <header>
-        <img src="./imagens/logo-banner.png" alt="" height="35px">
+    <header id="header">
+        <img src="./imagens/logo-banner.png" alt="" class="header-logotipo">
         <nav>
             <ul>
-                <li> Principal </li>
-                <li> Projetos  </li>
-                <li> Contato   </li>
+                <li> <a href="#principal" class="header-links">  Principal</a></li>
+                <li> <a href="#sobre" class="header-links">      Sobre    </a></li>
+                <li> <a href="#projetos" class="header-links">   Projetos </a></li>
+                <li> <a href="#contato" class="header-links">    Contato  </a></li>
                 <img src="./imagens/menu-aberto.png" alt="" class="menu-mobile" height="30px" 
-                onclick="abrirMenuMobile()">
+                onclick="abrirMenuMobile()" class="resume-reveal">
             </ul>
         </nav>
     </header>
+    <a href="https://wa.me/5511918267390?text=Ol%C3%A1%2C%20me%20interessei%20pelos%20seus%20servi%C3%A7os.%20Gostaria%20de%20saber%20sobre%3F">
+        <img src="./imagens/whatsapp (3).png" alt="logo-whatsapp" class="logo-whatsapp">
+    </a>
 
     <!-- Meu lateral MOBILE -->
      <div class="menu-lateral-mobile" id="menu-lateral-mobile">
@@ -31,14 +36,15 @@
         </div>
         <div class="container-menu-lateral-list" id="menu-list">
             <ul>
-                <li> Principal </li>
-                <li> Projetos </li>
-                <li> Contato </li>
+                <li><a href="#principal" class="header-links">Principal  </a> </li>
+                <li><a href="#sobre" class="header-links">    Sobre      </a> </li>
+                <li><a href="#projetos" class="header-links"> Projetos   </a> </li>
+                <li><a href="contato" class="header-links">   Contato    </a> </li>
             </ul>
         </div>
      </div>
 
-    <section class="sessao_content">
+    <section class="sessao_content" id="principal">
         <div class="container-perfil">
             <div class="container-img">
                 <img class="imagem-perfil" src="./imagens/perfil_img.jpg" alt="imagem-perfil">
@@ -52,7 +58,7 @@
         </div>
     </section>
 
-    <section class="sessao_content-2">
+    <section class="sessao_content-2" id="sobre">
         <div class="container-titulos">
             <div class="line"></div>
             <h1 class="titulos"> 
@@ -79,7 +85,7 @@
         </div>
     </section>
 
-    <section class="sessao_content-2">
+    <section class="sessao_content-2" id="projetos">
         <div class="line"></div>
         <div>
             <h1> Projetos </h1>
@@ -129,7 +135,7 @@
         </div>
     </section>
 
-    <section class="sessao_content-3">
+    <section class="sessao_content-3" id="contato">
         <div class="line"></div>
         <div>
             <h1> Contato </h1>

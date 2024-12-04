@@ -1,5 +1,4 @@
 /* Estilo Principal da Página */
-
 *{
     margin: 0;
     padding: 0;
@@ -8,18 +7,34 @@
     font-family: arial;
 }
 
-body{
+html, body{
     background-color: #ffffffe8;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+    width: 100%; /* Garante que a largura seja 100% */
 }
 
 header{
     display: flex;
+    position: fixed;
+    width: 100vw;
     padding: 15px;
     align-items: center;
     justify-content: space-around;
     box-shadow: 0px 0px 20px -10px black;
+    background-color: transparent;  /* Inicialmente transparente */
+    transition: background-color 0.3s ease;  /* Suaviza a transição do fundo */
 }
 
+header.bg-white {
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Um pouco mais forte para o efeito */
+    z-index: 10; /* Certifique-se de que o header esteja acima de outros elementos */
+}
+
+
+.header-logotipo{
+    height: 70px;
+}
 nav{
     display: flex;
 }
@@ -27,14 +42,11 @@ nav{
 h1{
     font-size: 30px;
     color: rgba(2, 61, 2, 0.555);
-
 }
 
 .menu-mobile{
     display: none;
 }
-
-
 
 .container-titulos{
     display: flex;
@@ -87,6 +99,17 @@ nav ul li:hover{
     transform: scale(1.2);
 }
 
+.logo-whatsapp{
+    height: 40px;
+    position: fixed;
+    top: 93%;
+    left: 5%;
+}
+
+.header-links{
+    color: rgba(0, 0, 0, 0.456);
+
+}
 h3{
     font-size: 14px;
     color: rgba(0, 0, 0, 0.438);
@@ -121,11 +144,11 @@ a:hover{
 
 .container-perfil{
     display: flex;
+    padding-top: 100px;
     text-align: center;
     align-items: center;
     justify-content: space-around;
-    width: 100vw;
- 
+    width: 100vw; 
 }
 
 .imagem-perfil{
@@ -185,6 +208,7 @@ a:hover{
 
 .txt{
     color: rgba(0, 0, 0, 0.456);
+    font-size: 25px;
 }
 
 .container-projetos{
@@ -204,8 +228,6 @@ a:hover{
 .container-projeto-content{
     margin-top: 20px;
     border: 3px solid rgba(0, 0, 0, 0.214);
-    /* box-shadow: 0px 0px 90px 0px black; */
-
 }
 
 button{

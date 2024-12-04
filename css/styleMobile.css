@@ -4,7 +4,7 @@
     .menu-mobile{
         display: flex;
     }
-  
+
     nav ul li{
       display: none;
     }
@@ -40,6 +40,6 @@
     
     .txt{
         color: rgba(0, 0, 0, 0.557);
+        font-size: 17px;
     }
-    
 }
