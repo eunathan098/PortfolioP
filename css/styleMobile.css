@@ -10,7 +10,7 @@
     }
 
     .imagem-perfil{
-        height: 250px;
+        height: 200px;
     }
 
     .resumo{
@@ -18,22 +18,25 @@
     }
 
     h1{
-        font-size: 15px;
+        font-size: 12px;
     }
 
     h4{
-        font-size: 17px;
+        font-size: 12px;
     }
 
     .btn{
         height: 40px;
-        width: 170px;
+        width: 140px;
     }
     .container-projetos{
         flex-wrap: wrap;
     }
 
-    
+    .container-projeto-content img{
+        width: 250px;
+    }
+        
     .bio{
         width: 90%;
     }
@@ -42,4 +45,48 @@
         color: rgba(0, 0, 0, 0.557);
         font-size: 17px;
     }
+
+    .logo-whatsapp{
+        display: flex;
+    }
 }
+
+@media screen and (min-width: 481px) and (max-width: 768px) {  
+    .imagem-perfil{
+        height: 250px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    h4{
+        font-size: 25px;
+    }
+
+    .btn{
+        width: 250px;
+    }
+
+    .txt{
+        font-size: 30px;
+    }
+
+    .container-projeto-content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+/* @media screen and (min-width:769px) and (max-width: 1200px) { 
+
+
+
+}
+
+@media screen and (min-width:1700px) {  
+
+
+
+} */
