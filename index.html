@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="shortcut icon" href="./imagens/perfil_img.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/styleGlobal.css">
     <link rel="stylesheet" href="css/styleMobile.css">
@@ -11,6 +11,7 @@
     <script src="script.js"></script>
     <title> Nathan | Dev </title>
 </head>
+
 <body>
     <header id="header">
         <img src="./imagens/logo-banner.png" alt="" class="header-logotipo">
@@ -20,30 +21,31 @@
                 <li> <a href="#sobre" class="header-links"> Sobre </a></li>
                 <li> <a href="#projetos" class="header-links"> Projetos </a></li>
                 <li> <a href="#contato" class="header-links"> Contato </a></li>
-                <img src="./imagens/menu-aberto.png" alt="" class="menu-mobile" height="30px" onclick="abrirMenuMobile()"
-                    class="resume-reveal">
+                <img src="./imagens/menu-aberto.png" alt="" class="menu-mobile" height="30px"
+                    onclick="abrirMenuMobile()" class="resume-reveal">
             <ul>
         </nav>
     </header>
-    <a href="https://wa.me/5511918267390?text=Ol%C3%A1%2C%20me%20interessei%20pelos%20seus%20servi%C3%A7os.%20Gostaria%20de%20saber%20sobre%3F">
+    <a
+        href="https://wa.me/5511918267390?text=Ol%C3%A1%2C%20me%20interessei%20pelos%20seus%20servi%C3%A7os.%20Gostaria%20de%20saber%20sobre%3F">
         <img src="./imagens/whatsapp (3).png" alt="logo-whatsapp" class="logo-whatsapp">
     </a>
 
     <!-- Meu lateral MOBILE -->
-     <div class="menu-lateral-mobile" id="menu-lateral-mobile">
+    <div class="menu-lateral-mobile" id="menu-lateral-mobile">
         <div class="align">
             <img src="./imagens/menu-aberto.png" alt="" height="30px" class="menu-mobile-lateral" id="icone-menu"
-            onclick="fecharMenuMobile()">
+                onclick="fecharMenuMobile()">
         </div>
         <div class="container-menu-lateral-list" id="menu-list">
             <ul>
-                <li><a href="#principal" class="header-links">Principal  </a> </li>
-                <li><a href="#sobre" class="header-links">    Sobre      </a> </li>
-                <li><a href="#projetos" class="header-links"> Projetos   </a> </li>
-                <li><a href="contato" class="header-links">   Contato    </a> </li>
+                <li><a href="#principal" class="header-links">Principal </a> </li>
+                <li><a href="#sobre" class="header-links"> Sobre </a> </li>
+                <li><a href="#projetos" class="header-links"> Projetos </a> </li>
+                <li><a href="contato" class="header-links"> Contato </a> </li>
             </ul>
         </div>
-     </div>
+    </div>
 
     <section class="sessao_content" id="principal">
         <div class="container-perfil">
@@ -51,10 +53,31 @@
                 <img class="imagem-perfil" src="./imagens/perfil_img.jpg" alt="imagem-perfil">
             </div>
             <div class="resumo">
-                <h1> Oi, sou o Nathan Cruz 
+                <h1> Oi, sou o Nathan Cruz
                 </h1>
                 <h4> Desenvolvedor Web </h4>
-                <button class="btn"> Contato </button>
+                <button class="btn"  onclick="openForm()"> Contato </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="sessao-form" id="sessao-form" onclick="fecharForm()">
+
+        <div class="container-form">
+            <div class="form">
+                <form>
+                    <div class="campos">
+                        <label> Nome: </label>
+                        <input type="text" placeholder="Digite o seu nome...">
+                    </div>
+
+                    <div class="campos">
+                        <label> E-mail: </label>
+                        <input type="email" placeholder="Digite o seu e-mail...">
+                    </div>
+
+                    <textarea name="" id=""></textarea>
+                </form>
             </div>
         </div>
     </section>
@@ -62,27 +85,33 @@
     <section class="sessao_content-2" id="sobre">
         <div class="container-titulos">
             <div class="line"></div>
-            <h1 class="titulos"> 
+            <h1 class="titulos">
                 Sobre mim
             </h1>
         </div>
         <div class="container-sobre-mim">
             <div class="bio">
                 <p class="txt"> Olá, sou Nathan Cruz...<br><br>
-                    Desenvolvedor de landing pages apaixonado por criar experiências digitais impactantes e eficientes.<br>
+                    Desenvolvedor de landing pages apaixonado por criar experiências digitais impactantes e
+                    eficientes.<br>
                     Com uma sólida base de conhecimentos práticos e em constante busca pelo aperfeiçoamento,<br>
-                    estou sempre focado em entregar soluções que atendem às necessidades dos meus clientes de forma criativa e estratégica.<br><br>
+                    estou sempre focado em entregar soluções que atendem às necessidades dos meus clientes de forma
+                    criativa e estratégica.<br><br>
 
-                    Meu objetivo é criar páginas de captura que não apenas tenham uma aparência atraente, mas que também sejam altamente funcionais e otimizadas para conversão.<br>
+                    Meu objetivo é criar páginas de captura que não apenas tenham uma aparência atraente, mas que também
+                    sejam altamente funcionais e otimizadas para conversão.<br>
 
-                    </br> Tenho experiência prática no uso de ferramentas modernas e em técnicas que garantem a melhor performance, seja para aumentar a taxa de conversão ou melhorar a experiência do usuário.<br>
-                    
-                    Atualmente, estou expandindo minhas habilidades para me tornar um profissional ainda mais completo, acompanhando as tendências do mercado e aprofundando meu conhecimento em tecnologias e design.<br>
-                    
-                    Se você busca um desenvolvedor que se preocupa com os detalhes e com a qualidade final de cada projeto, vamos conversar! Estou à disposição para ajudar a transformar suas ideias em resultados.
+                    </br> Tenho experiência prática no uso de ferramentas modernas e em técnicas que garantem a melhor
+                    performance, seja para aumentar a taxa de conversão ou melhorar a experiência do usuário.<br>
+
+                    Atualmente, estou expandindo minhas habilidades para me tornar um profissional ainda mais completo,
+                    acompanhando as tendências do mercado e aprofundando meu conhecimento em tecnologias e design.<br>
+
+                    Se você busca um desenvolvedor que se preocupa com os detalhes e com a qualidade final de cada
+                    projeto, vamos conversar! Estou à disposição para ajudar a transformar suas ideias em resultados.
                 </p>
             </div>
-            
+
         </div>
     </section>
 
@@ -100,9 +129,9 @@
                     <p> Projeto dedicado a landing page de profissional.<br>
                         Com sessão para contato, localização e fotos.<br>
                         Imagens meranente ilustrativas. </p><br>
-                        <button><a href="https://veterinaria-lp.vercel.app/">Acessar</a></button>
+                    <button><a href="https://veterinaria-lp.vercel.app/">Acessar</a></button>
                 </div>
-    
+
                 <div class="container-projeto-content">
                     <img src="./imagens/bannerlojavirtual.png" alt="" height="150px">
 
@@ -113,9 +142,8 @@
                 </div>
 
             </div>
-            
 
-           <div class="container-projetos-2">
+            <div class="container-projetos-2">
 
                 <div class="container-projeto-content">
                     <img src="./imagens/banner-coffecode.png" alt="" height="150px">
@@ -124,13 +152,13 @@
                         Imagens meranente ilustrativas. </p><br>
                     <button><a href="https://coffecode1.vercel.app/">Acessar</a></button>
                 </div>
-    
+
                 <div class="container-projeto-content">
                     <img src="./imagens/caninosfoto.png" alt="" height="150px">
                     <p> Projeto dedicado a landing page de profissional.<br>
                         Com sessão para contato, localização e fotos.<br>
                         Imagens meranente ilustrativas. </p><br>
-                        <button> Acessar </button>
+                    <button> Acessar </button>
                 </div>
             </div>
         </div>
@@ -142,44 +170,22 @@
             <h1> Contato </h1>
         </div><br>
         <div class="container-contatos">
-            <a href="https://wa.me/5511918267390?text=Ol%C3%A1%2C%20me%20interessei%20pelos%20seus%20servi%C3%A7os.%20Gostaria%20de%20saber%20sobre%3F">
+            <a
+                href="https://wa.me/5511918267390?text=Ol%C3%A1%2C%20me%20interessei%20pelos%20seus%20servi%C3%A7os.%20Gostaria%20de%20saber%20sobre%3F">
                 <img class="icones-contato" src="./imagens/whatsapp (3).png" alt="">
             </a>
-            <a href="mailto:devnathan2025@gmail.com?subject=Informações%20sobre%20os%20servi%C3%A7os&body=Ol%C3%A1%2C%20me%20interessei%20pelos%20seus%20servi%C3%A7os.%20Gostaria%20de%20saber%20mais%3F">
+            <a
+                href="mailto:devnathan2025@gmail.com?subject=Informações%20sobre%20os%20servi%C3%A7os&body=Ol%C3%A1%2C%20me%20interessei%20pelos%20seus%20servi%C3%A7os.%20Gostaria%20de%20saber%20mais%3F">
                 <img class="icones-contato" src="./imagens/e-mail.png" alt="">
             </a>
             <img class="icones-contato" src="./imagens/gmail.png" alt="">
         </div>
     </section>
 
-    <section>
-        <div class="line"></div>
-    <div>
-        <h1> Formulário </h1>
-    </div><br>
-
-        <div class="container-form">
-            <div class="form">
-                <form>
-                    <div class="campos">
-                        <label> Nome: </label>
-                        <input type="text" placeholder="Digite o seu nome...">
-                    </div>
-    
-                    <div class="campos">
-                        <label> E-mail: </label>
-                        <input type="email" placeholder="Digite o seu e-mail...">
-                    </div>
-    
-                    <textarea name="" id=""></textarea>
-                </form>
-            </div>
-        </div>
-    </section>
 
     <footer>
         <p> Todos os direitos reservados @2024</p>
     </footer>
-    
+
 </body>
 </html>

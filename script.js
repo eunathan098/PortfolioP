@@ -24,3 +24,13 @@ function fecharMenuMobile(){
  
  // Adiciona o ouvinte de evento para o scroll
  window.addEventListener("scroll", checkScroll);
+
+ function openForm(){
+    const formContact = document.getElementById("sessao-form");
+    formContact.style.display = "block"
+ }
+
+ function fecharForm(){
+    const formContact = document.getElementById("sessao-form");
+    formContact.style.display = "none"
+ }
