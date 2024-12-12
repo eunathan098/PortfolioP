@@ -49,6 +49,10 @@
     .logo-whatsapp{
         display: flex;
     }
+
+    #container-form-bg #form{
+        width: 370px;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {  

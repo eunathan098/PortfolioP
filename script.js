@@ -16,21 +16,21 @@ function fecharMenuMobile(){
  function checkScroll() {
    if (window.scrollY > 0) {
      // Verifica a posição do scroll
-     header.classList.add("bg-white"); // Adiciona a classe para o fundo branco
+     header.classList.add("bg-white");
    } else {
-     header.classList.remove("bg-white"); // Remove a classe quando volta ao topo
+     header.classList.remove("bg-white");
    }
  }
  
  // Adiciona o ouvinte de evento para o scroll
  window.addEventListener("scroll", checkScroll);
 
- function openForm(){
-    const formContact = document.getElementById("sessao-form");
-    formContact.style.display = "block"
- }
+function openForm(){
+  const containerForm = document.getElementById("container-form-bg");
+  containerForm.style.display = "block"
+}
 
- function fecharForm(){
-    const formContact = document.getElementById("sessao-form");
-    formContact.style.display = "none"
- }
+function fecharForm(){
+  const containerForm = document.getElementById("container-form-bg");
+  containerForm.style.display = "none"
+}
