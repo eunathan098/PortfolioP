@@ -34,3 +34,9 @@ function fecharForm(){
   const containerForm = document.getElementById("container-form-bg");
   containerForm.style.display = "none"
 }
+
+// Scroll Reveal 
+
+// window.sr = ScrollReveal({ reset: true});
+
+// sr.reveal('container-projeto-content', { duration: 2000})

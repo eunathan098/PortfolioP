@@ -11,23 +11,28 @@
 
     .imagem-perfil{
         height: 200px;
+        margin-top: 20px;
     }
 
     .resumo{
-        padding-right: 40px;
+        margin-top: 20px;
+    }
+
+    .container-perfil{
+        flex-direction: column;
     }
 
     h1{
-        font-size: 12px;
+        font-size: 25px;
     }
 
     h4{
-        font-size: 12px;
+        font-size: 20px;
     }
 
     .btn{
-        height: 40px;
-        width: 140px;
+        height: 50px;
+        width: 250px;
     }
     .container-projetos{
         flex-wrap: wrap;
@@ -43,7 +48,7 @@
     
     .txt{
         color: rgba(0, 0, 0, 0.557);
-        font-size: 17px;
+        font-size: 25px;
     }
 
     .logo-whatsapp{
